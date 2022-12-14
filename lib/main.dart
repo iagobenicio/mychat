@@ -87,7 +87,9 @@ void main()async{
   getIt.registerSingleton<IUpdateUserName>(UpdateUserNameIMPL(userProfileRepositorie: getIt.get<IUserProfileRepositorie>()));
   
 
-  runApp( MaterialApp(
+  runApp( 
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
